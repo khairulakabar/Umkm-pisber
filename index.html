@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PISBER UMKM menyediakan camilan pisang strawberry, cokelat, dan keju yang lezat dengan harga terjangkau.">
+
+    <title>UMKM PISBER | Pisang Lezat</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS Lokal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">
+            PIS<span class="pink">BER</span>.
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Buka navigasi">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tentang">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#produk">Produk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontak">Kontak</a>
+                </li>
+                <li class="nav-item ms-lg-3">
+                    <a href="#produk" class="btn btn-pisber">
+                        Pesan Sekarang
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO / BERANDA -->
+<header class="hero" id="home">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+                <span class="badge rounded-pill bg-light text-danger p-2 mb-3">
+                    🍓 Camilan Favorit
+                </span>
+
+                <h1 class="display-4 fw-bold">
+                    PISBER<br>
+                    <span class="pink">Pisang Lezat, Hati Bahagia!</span>
+                </h1>
+
+                <p class="lead text-secondary mt-3">
+                    Nikmati camilan pisang dengan berbagai pilihan rasa
+                    dan topping yang lezat. Cocok untuk menemani waktu
+                    santai bersama keluarga dan teman.
+                </p>
+
+                <a href="#produk" class="btn btn-pisber btn-lg mt-2">
+                    Lihat Produk
+                </a>
+
+                <a href="#tentang" class="btn btn-outline-dark btn-lg mt-2">
+                    Tentang Kami
+                </a>
+            </div>
+
+            <div class="col-lg-6">
+                <img
+                    src="assets/produk1.jpg"
+                    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=900&q=80'"
+                    class="img-fluid hero-img"
+                    alt="Pisang pilihan PISBER">
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- TENTANG KAMI -->
+<section class="py-5" id="tentang">
+    <div class="container">
+        <div class="text-center mb-4">
+            <span class="section-label">TENTANG KAMI</span>
+            <h2 class="fw-bold mt-2">
+                Tentang <span class="pink">PISBER</span>
+            </h2>
+            <p class="text-secondary">
+                Usaha kecil dengan rasa yang istimewa.
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-9 text-center">
+                <p>
+                    PISBER merupakan UMKM yang menyediakan aneka camilan
+                    berbahan dasar pisang. Kami menghadirkan pilihan rasa
+                    strawberry, cokelat, dan keju dengan harga terjangkau.
+                    PISBER hadir untuk menjadi pilihan camilan bagi semua
+                    kalangan.
+                </p>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-3 text-center">
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <h5>🍌 Bahan Pilihan</h5>
+                    <p class="text-secondary mb-0">
+                        Mengutamakan bahan pilihan untuk camilan yang lezat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <h5>🍓 Banyak Varian</h5>
+                    <p class="text-secondary mb-0">
+                        Berbagai pilihan rasa sesuai selera.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <h5>❤️ Harga Bersahabat</h5>
+                    <p class="text-secondary mb-0">
+                        Camilan nikmat dengan harga terjangkau.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUK -->
+<section class="py-5 products" id="produk">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-label">MENU FAVORIT</span>
+            <h2 class="fw-bold mt-2">
+                Produk <span class="pink">Kami</span>
+            </h2>
+            <p class="text-secondary">
+                Pilih rasa favoritmu dan pesan sekarang!
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- PRODUK 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card product-card h-100">
+                    <img
+                        src="assets/Produk1.jpg"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=700&q=80'"
+                        class="card-img-top product-img"
+                        alt="Pisang Strawberry">
+
+                    <div class="card-body text-center d-flex flex-column">
+                        <span class="badge product-badge align-self-center">
+                            Favorit
+                        </span>
+
+                        <h5 class="fw-bold mt-3">Pisang Strawberry</h5>
+                        <p class="text-secondary">
+                            Rasa strawberry manis dan menggugah selera.
+                        </p>
+
+                        <p class="price mt-auto">Rp10.000</p>
+
+                        <button
+                            type="button"
+                            class="btn btn-pisber pesan"
+                            data-produk1.jpg="Pisang strawbary">
+                            🛒 Pesan Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUK 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card product-card h-100">
+                    <img
+                        src="assets/produk2.jpg"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80'"
+                        class="card-img-top product-img"
+                        alt="Pisang Cokelat">
+
+                    <div class="card-body text-center d-flex flex-column">
+                        <span class="badge product-badge align-self-center">
+                            Best Seller
+                        </span>
+
+                        <h5 class="fw-bold mt-3">Pisang Cokelat</h5>
+                        <p class="text-secondary">
+                            Perpaduan pisang dan cokelat yang nikmat.
+                        </p>
+
+                        <p class="price mt-auto">Rp10.000</p>
+
+                        <button
+                            type="button"
+                            class="btn btn-pisber pesan"
+                            data-produk="Pisang Cokelat">
+                            🛒 Pesan Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUK 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card product-card h-100">
+                    <img
+                        src="assets/produk3.jpg"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1526081347589-7fa3cb41b4b2?auto=format&fit=crop&w=700&q=80'"
+                        class="card-img-top product-img"
+                        alt="Pisang Keju">
+
+                    <div class="card-body text-center d-flex flex-column">
+                        <span class="badge product-badge align-self-center">
+                            Pilihan Lezat
+                        </span>
+
+                        <h5 class="fw-bold mt-3">Pisang taro
+                        <p class="text-secondary">
+                            Camilan pisang dengan topping keju gurih.
+                        </p>
+
+                        <p class="price mt-auto">Rp12.000</p>
+
+                        <button
+                            type="button"
+                            class="btn btn-pisber pesan"
+                            data-produk="Pisang Keju">
+                            🛒 Pesan Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="small text-secondary text-center mt-4">
+            *Harga merupakan contoh dan dapat disesuaikan.
+        </p>
+    </div>
+</section>
+
+<!-- KONTAK -->
+<section class="py-5 contact-section" id="kontak">
+    <div class="container text-center">
+        <span class="section-label">HUBUNGI KAMI</span>
+
+        <h2 class="fw-bold mt-2">
+            Pesan Produk <span class="pink">PISBER</span>
+        </h2>
+
+        <p class="text-secondary">
+            Hubungi kami untuk pemesanan dan informasi produk.
+        </p>
+
+        <button type="button" class="btn btn-pisber btn-lg" id="kontakBtn">
+            💬 Hubungi WhatsApp
+        </button>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer text-center py-4">
+    <div class="container">
+        <h4 class="fw-bold">PIS<span class="pink">BER</span>.</h4>
+
+        <p>
+            Camilan Pisang, Kebahagiaan di Setiap Gigitan.
+        </p>
+
+        <div class="footer-links mb-3">
+            <a href="#home">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#produk">Produk</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+
+        <p class="small mb-0">
+            &copy; <span id="tahun"></span> UMKM PISBER.
+            Semua hak dilindungi.
+        </p>
+    </div>
+</footer>
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JAVASCRIPT LOKAL -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
