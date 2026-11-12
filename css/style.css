@@ -1,1 +1,438 @@
 
+/* =====================================
+   CSS WEBSITE UMKM PISBER
+   ===================================== */
+
+:root {
+    --pink: #f0274a;
+    --pink-dark: #d91e40;
+    --pink-light: #ffe4e9;
+    --cream: #fff8f3;
+    --white: #ffffff;
+    --dark: #342720;
+    --gray: #6c757d;
+}
+
+/* RESET DAN PENGATURAN DASAR */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+    background-color: var(--white);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    scroll-margin-top: 75px;
+}
+
+/* WARNA TEKS */
+.pink {
+    color: var(--pink) !important;
+}
+
+.section-label {
+    color: var(--pink);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+/* =====================================
+   NAVBAR
+   ===================================== */
+
+.navbar {
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    color: var(--dark);
+    font-size: 28px;
+    letter-spacing: -1px;
+}
+
+.navbar-brand:hover {
+    color: var(--pink);
+}
+
+.nav-link {
+    color: var(--dark);
+    font-weight: 600;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--pink);
+}
+
+.navbar-toggler {
+    border-radius: 8px;
+    box-shadow: none !important;
+}
+
+/* =====================================
+   TOMBOL
+   ===================================== */
+
+.btn-pisber {
+    display: inline-block;
+    padding: 11px 24px;
+    color: var(--white);
+    background-color: var(--pink);
+    border: 2px solid var(--pink);
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-pisber:hover,
+.btn-pisber:focus {
+    color: var(--white);
+    background-color: var(--pink-dark);
+    border-color: var(--pink-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px #f0274a30;
+}
+
+.btn-outline-dark {
+    border-radius: 50px;
+    padding: 11px 24px;
+    font-weight: 600;
+}
+
+/* =====================================
+   HERO / BERANDA
+   ===================================== */
+
+.hero {
+    padding: 85px 0;
+    background: linear-gradient(
+        135deg,
+        #fff5ec 0%,
+        #ffe2e9 100%
+    );
+    overflow: hidden;
+}
+
+.hero h1 {
+    color: var(--dark);
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+}
+
+.hero .lead {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.hero .badge {
+    font-size: 14px;
+    padding: 10px 16px !important;
+}
+
+.hero-img {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 28px;
+    border: 6px solid #ffffffa6;
+    box-shadow: 0 20px 45px #633b351f;
+    transition: transform 0.4s ease;
+}
+
+.hero-img:hover {
+    transform: scale(1.02);
+}
+
+/* =====================================
+   TENTANG KAMI
+   ===================================== */
+
+#tentang {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+}
+
+#tentang h2 {
+    font-size: 36px;
+}
+
+#tentang p {
+    line-height: 1.9;
+}
+
+.feature-box {
+    height: 100%;
+    padding: 25px 18px;
+    background-color: var(--cream);
+    border: 1px solid #f3e7df;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    border-color: var(--pink-light);
+    box-shadow: 0 10px 25px #00000008;
+}
+
+.feature-box h5 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* =====================================
+   PRODUK
+   ===================================== */
+
+.products {
+    background-color: var(--cream);
+}
+
+.products h2 {
+    font-size: 36px;
+}
+
+.product-card {
+    height: 100%;
+    background-color: var(--white);
+    border: 1px solid #f1e8e2;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #00000008;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px #00000012;
+}
+
+.product-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    background-color: #f8eee8;
+}
+
+.product-card .card-body {
+    padding: 25px 22px;
+}
+
+.product-card h5 {
+    color: var(--dark);
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    line-height: 1.7;
+}
+
+.product-badge {
+    color: var(--pink-dark);
+    background-color: var(--pink-light);
+    padding: 8px 13px;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.price {
+    color: var(--pink);
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.product-card .btn {
+    width: 100%;
+}
+
+/* =====================================
+   KONTAK
+   ===================================== */
+
+.contact-section {
+    background: linear-gradient(
+        135deg,
+        #fff8f3,
+        #ffe4e9
+    );
+}
+
+.contact-section h2 {
+    font-size: 36px;
+}
+
+.contact-section p {
+    margin-top: 12px;
+    margin-bottom: 25px;
+}
+
+/* =====================================
+   FOOTER
+   ===================================== */
+
+.footer {
+    color: #f9ece6;
+    background-color: #30251f;
+    padding: 35px 0;
+}
+
+.footer h4 {
+    color: var(--white);
+    font-size: 30px;
+}
+
+.footer p {
+    margin-bottom: 12px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #f9ece6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff9caf;
+}
+
+/* =====================================
+   ANIMASI
+   ===================================== */
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero .col-lg-6 {
+    animation: muncul 0.8s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* =====================================
+   RESPONSIF TABLET
+   ===================================== */
+
+@media (max-width: 991.98px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-img {
+        height: 350px;
+    }
+
+    .navbar-nav {
+        padding-top: 12px;
+    }
+
+    .navbar-nav .btn {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+/* =====================================
+   RESPONSIF HP
+   ===================================== */
+
+@media (max-width: 575.98px) {
+    .hero {
+        padding: 45px 0;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+        letter-spacing: -1px;
+    }
+
+    .hero .lead {
+        font-size: 16px;
+    }
+
+    .hero-img {
+        height: 270px;
+        border-radius: 20px;
+    }
+
+    #tentang h2,
+    .products h2,
+    .contact-section h2 {
+        font-size: 29px;
+    }
+
+    #tentang,
+    .products,
+    .contact-section {
+        padding-top: 55px !important;
+        padding-bottom: 55px !important;
+    }
+
+    .product-img {
+        height: 220px;
+    }
+
+    .product-card .card-body {
+        padding: 22px 18px;
+    }
+
+    .footer-links {
+        gap: 12px;
+    }
+
+    .btn-pisber,
+    .btn-outline-dark {
+        padding: 10px 18px;
+    }
+}
